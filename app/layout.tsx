@@ -13,7 +13,7 @@ import {
   Source_Serif_4,
   Crimson_Pro,
 } from "next/font/google";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./globals.css";
 
 import Header from "@/components/Header";
@@ -22,7 +22,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/next";
 
 import PolymathDecorations from "@/components/PolyMathDecorations";
-import GridOverlay from "@/components/GridOverlay";  // ← Add import
+import GridOverlay from "@/components/GridOverlay"; // ← Add import
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -104,7 +104,8 @@ const crimsonPro = Crimson_Pro({
 
 export const metadata: Metadata = {
   title: "GRIMLABS",
-  description: "GRIMLABS — a public, long-term independent research and tinkering lab. Exploring, building, and documenting experimental projects in engineering, technology, and scientific inquiry.",
+  description:
+    "GRIMLABS — a public, long-term independent research and tinkering lab. Exploring, building, and documenting experimental projects in engineering, technology, and scientific inquiry.",
 };
 
 export default function RootLayout({
@@ -140,17 +141,27 @@ export default function RootLayout({
           }}
         />
 
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
           {/* Grid first (lowest z-index) */}
-          <GridOverlay pattern="hybrid" dotSize={1} gridSize={35} cornerEmphasis={true} />
+          <GridOverlay
+            pattern="hybrid"
+            dotSize={1}
+            gridSize={35}
+            cornerEmphasis={true}
+          />
 
           {/* Then decorations */}
-          <PolymathDecorations
+          {/*<PolymathDecorations
             fixed={true}
             density='medium'
             opacityMultiplier={0.2}
           />
-
+*/}
           <Header />
           {children}
           <Footer />
