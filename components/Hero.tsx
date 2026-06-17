@@ -302,7 +302,7 @@ export default function Hero() {
       className="relative min-h-screen flex items-center overflow-hidden transition-colors"
     >
       {/* ─── Main Content ─── */}
-      <div className="container mx-auto max-w-[1200px] px-10 lg:px-16 py-24 md:py-32 relative z-10">
+      <div className="container mx-auto max-w-300 px-10 lg:px-16 py-24 md:py-32 relative z-10">
         {/* ─── Main Hero Grid ─── */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           {/* Left — Text */}
@@ -342,21 +342,10 @@ export default function Hero() {
             </div>
 
             <p
-              className="hero-fade fade-in max-w-[480px] text-[16px] leading-[1.9]"
+              className="hero-fade fade-in max-w-120 text-[16px] leading-[1.9]"
               style={{ color: "var(--white-dim)" }}
             >
-              Security research, embedded systems, and applied computation.
-              Bridging{" "}
-              <span
-                className="border-b"
-                style={{
-                  color: "var(--text)",
-                  borderColor: "var(--trace-line)",
-                }}
-              >
-                silicon
-              </span>
-              ,{" "}
+              An independent research and engineering laboratory exploring{" "}
               <span
                 className="border-b"
                 style={{
@@ -366,6 +355,16 @@ export default function Hero() {
               >
                 software
               </span>
+              ,{" "}
+              <span
+                className="border-b"
+                style={{
+                  color: "var(--text)",
+                  borderColor: "var(--trace-line)",
+                }}
+              >
+                hardware
+              </span>
               , and{" "}
               <span
                 className="border-b"
@@ -374,9 +373,9 @@ export default function Hero() {
                   borderColor: "var(--trace-line)",
                 }}
               >
-                protocol
+                scientific systems
               </span>{" "}
-              layers — from transistor physics to consensus mechanisms.
+              through design, experimentation, security research, and open knowledge sharing.
             </p>
           </div>
 

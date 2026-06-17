@@ -66,7 +66,7 @@ const components: PortableTextComponents = {
       return (
         <h1 
           id={id}
-          className="text-[32px] md:text-[36px] mt-16 mb-8 scroll-mt-24 font-normal"
+          className="text-[32px] md:text-[40px] mt-16 mb-8 scroll-mt-24 font-bold tracking-[-0.03em]"
           style={{ color: 'var(--text)' }}
         >
           {children}
@@ -78,10 +78,10 @@ const components: PortableTextComponents = {
       return (
         <h2 
           id={id}
-          className="text-[26px] md:text-[28px] mt-14 mb-6 scroll-mt-24 flex items-center gap-4 font-normal"
+          className="text-[26px] md:text-[30px] mt-14 mb-6 scroll-mt-24 flex items-center gap-4 font-semibold"
           style={{ color: 'var(--text)' }}
         >
-          <span className="w-10 h-px flex-shrink-0" style={{ background: 'var(--red)' }} />
+          <span className="w-10 h-px shrink-0" style={{ background: 'var(--red)' }} />
           {children}
         </h2>
       )
@@ -91,7 +91,7 @@ const components: PortableTextComponents = {
       return (
         <h3 
           id={id}
-          className="text-[22px] mt-10 mb-5 scroll-mt-24 font-normal"
+          className="text-[22px] md:text-[24px] mt-10 mb-5 scroll-mt-24 font-semibold"
           style={{ color: 'var(--text)' }}
         >
           {children}
@@ -103,7 +103,7 @@ const components: PortableTextComponents = {
       return (
         <h4 
           id={id}
-          className="text-[20px] tracking-[4px] uppercase mt-8 mb-4 scroll-mt-24 font-normal"
+          className="text-[14px] tracking-[3px] uppercase mt-8 mb-4 scroll-mt-24 font-semibold"
           style={{ color: 'var(--red)' }}
         >
           {children}
@@ -112,7 +112,7 @@ const components: PortableTextComponents = {
     },
     normal: ({ children }: { children?: React.ReactNode }) => (
       <p 
-        className="mb-7 text-[16px] md:text-[18px] leading-[2] font-light"
+        className="mb-7 text-[16px] md:text-[18px] leading-loose font-normal"
         style={{ color: 'var(--text)' }}
       >
         {children}

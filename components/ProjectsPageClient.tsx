@@ -66,7 +66,7 @@ function GithubLink({ href, full = false }: { href: string; full?: boolean }) {
     <button
       type="button"
       onClick={e => { e.preventDefault(); e.stopPropagation(); window.open(href, '_blank', 'noopener,noreferrer'); }}
-      className="flex items-center gap-1.5 transition-all duration-300 hover:text-[var(--accent)]"
+      className="flex items-center gap-1.5 transition-all duration-300 hover:text-(--accent)"
       style={{ color: 'var(--white-dim)', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
     >
       <i className="fa-brands fa-github text-[15px]" />
@@ -100,7 +100,7 @@ function SpotlightCard({ project }: { project: Project }) {
       <CornerTicks />
 
       {/* Left: image or icon panel */}
-      <div className="relative w-full md:w-[45%] flex-shrink-0 h-[220px] md:h-auto md:min-h-[280px]">
+      <div className="relative w-full md:w-[45%] shrink-0 h-55 md:h-auto md:min-h-70">
         {hasImage ? (
           <Image
             src={project.thumbnail!.asset.url}
@@ -148,7 +148,7 @@ function SpotlightCard({ project }: { project: Project }) {
         <div>
           <div className="flex items-start justify-between gap-4 mb-4">
             <h3
-              className="text-[var(--foreground)] transition-colors duration-300 group-hover:text-[var(--accent)]"
+              className="text-foreground transition-colors duration-300 group-hover:text-(--accent)"
               style={{
                 fontSize: 'clamp(22px, 2vw, 34px)',
                 fontWeight: 300,
@@ -195,7 +195,7 @@ function ProjectIconBox({
 }) {
   const gridId = `pgrid-${projectId}`;
   return (
-    <div className="relative w-[90px] h-[90px] flex-shrink-0 overflow-hidden">
+    <div className="relative w-[90px] h-[90px] shrink-0 overflow-hidden">
       <div
         className="absolute inset-0 z-10 pointer-events-none"
         style={{ border: '1px solid var(--border-primary)' }}

@@ -14,7 +14,7 @@ export default async function Projects() {
                 backgroundColor: 'rgba(0, 0, 0, 0.1)',
                 borderColor: 'var(--border-primary)'
             }}>
-            <div className="container mx-auto max-w-[1200px]">
+            <div className="container mx-auto max-w-300">
                 <div className="section-marker mb-4">004 — Projects</div>
                 <div className="flex items-end justify-between mb-4" >
                     <h2

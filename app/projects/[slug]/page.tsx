@@ -44,7 +44,7 @@ const components: PortableTextComponents = {
       return (
         <h1 
           id={id}
-          className="text-[32px] md:text-[36px] mt-16 mb-8 scroll-mt-24 font-normal"
+          className="text-[32px] md:text-[40px] mt-16 mb-8 scroll-mt-24 font-bold tracking-[-0.03em]"
           style={{ color: 'var(--text)' }}
         >
           {children}
@@ -56,10 +56,10 @@ const components: PortableTextComponents = {
       return (
         <h2 
           id={id}
-          className="text-[26px] md:text-[28px] mt-14 mb-6 scroll-mt-24 flex items-center gap-4 font-normal"
+          className="text-[26px] md:text-[30px] mt-14 mb-6 scroll-mt-24 flex items-center gap-4 font-semibold"
           style={{ color: 'var(--text)' }}
         >
-          <span className="w-10 h-px flex-shrink-0" style={{ background: 'var(--red)' }} />
+          <span className="w-10 h-px shrink-0" style={{ background: 'var(--red)' }} />
           {children}
         </h2>
       )
@@ -69,7 +69,7 @@ const components: PortableTextComponents = {
       return (
         <h3 
           id={id}
-          className="text-[22px] mt-10 mb-5 scroll-mt-24 font-normal"
+          className="text-[22px] md:text-[24px] mt-10 mb-5 scroll-mt-24 font-semibold"
           style={{ color: 'var(--text)' }}
         >
           {children}
@@ -81,7 +81,7 @@ const components: PortableTextComponents = {
       return (
         <h4 
           id={id}
-          className="text-[18px] tracking-[4px] uppercase mt-8 mb-4 scroll-mt-24 font-normal"
+          className="text-[14px] tracking-[3px] uppercase mt-8 mb-4 scroll-mt-24 font-semibold"
           style={{ color: 'var(--red)' }}
         >
           {children}
@@ -90,7 +90,7 @@ const components: PortableTextComponents = {
     },
     normal: ({ children }: { children?: React.ReactNode }) => (
       <p 
-        className="mb-7 text-[16px] md:text-[18px] leading-[2] font-light"
+        className="mb-7 text-[16px] md:text-[18px] leading-loose font-normal"
         style={{ color: 'var(--text)' }}
       >
         {children}
@@ -124,7 +124,7 @@ const components: PortableTextComponents = {
   listItem: {
     bullet: ({ children }: { children?: React.ReactNode }) => (
       <li className="flex items-start gap-4 text-[14px] md:text-[16px] leading-[1.9]">
-        <span className="mt-2.5 w-2 h-2 rounded-full flex-shrink-0" style={{ background: 'var(--red)' }} />
+        <span className="mt-2.5 w-2 h-2 rounded-full shrink-0" style={{ background: 'var(--red)' }} />
         <span>{children}</span>
       </li>
     ),
@@ -157,7 +157,7 @@ const components: PortableTextComponents = {
       return (
         <a
           href={href}
-          className="transition-colors duration-300 hover:text-[var(--red)]"
+          className="transition-colors duration-300 hover:text-(--red)"
           style={{
             color: 'var(--text)',
             textDecoration: 'underline',
@@ -245,7 +245,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <article className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-[32px] mb-4" style={{ color: 'var(--text)' }}>Project not found</h1>
-          <Link href="/projects" className="text-[11px] tracking-[3px] uppercase hover:text-[var(--red)]" style={{ color: 'var(--white-dim)' }}>← Back to projects</Link>
+          <Link href="/projects" className="text-[11px] tracking-[3px] uppercase hover:text-(--red)" style={{ color: 'var(--white-dim)' }}>← Back to projects</Link>
         </div>
       </article>
     )
@@ -292,7 +292,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             className="mb-6"
             style={{
               fontSize: 'clamp(32px, 5vw, 64px)',
-              fontWeight: 300,
+              fontWeight: 400,
               letterSpacing: '-1.5px',
               lineHeight: 1.05,
               color: 'var(--text)',
@@ -328,11 +328,11 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-2 text-[11px] tracking-[3px] uppercase hover:text-[var(--text)]"
+                className="group flex items-center gap-2 text-[11px] tracking-[3px] uppercase hover:text-(--text)"
                 style={{ color: 'var(--white-dim)' }}
               >
                 <i className="fab fa-github text-base" />
-                <span>Source</span>
+                <span>GitHub</span>
                 <span className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">↗</span>
               </a>
             )}
@@ -341,7 +341,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 href={project.external}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-2 text-[11px] tracking-[3px] uppercase hover:text-[var(--red)]"
+                className="group flex items-center gap-2 text-[11px] tracking-[3px] uppercase hover:text-(--red)"
                 style={{ color: 'var(--white-dim)' }}
               >
                 <span>Live</span>

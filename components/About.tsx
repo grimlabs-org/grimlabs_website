@@ -9,7 +9,7 @@
 /* ─── Schematic Portrait SVG ─── */
 function SchematicPortrait() {
     return (
-        <div className="relative w-full max-w-[280px] aspect-square">
+        <div className="relative w-full max-w-70 aspect-square">
             {/* Outer frame */}
             <div
                 className="absolute inset-0"
@@ -105,84 +105,168 @@ function SchematicPortrait() {
 /* ─── Main Component ─── */
 export default function About() {
 
+    // const aboutParagraphs = [
+    //     "Grim Labs is a public, independent research and engineering lab dedicated to building, testing, and refining ideas over the long term.",
+    //     "We explore innovative solutions across technology and science, documenting our work openly to engage collaborators and share insights with the broader community.",
+    //     "Our goal is to make research and experimentation accessible, meaningful, and impactful for everyone involved.",
+    // ]
+
+    // const stats = [
+    //     { label: 'DOMAINS', value: '04' },
+    //     { label: 'YEARS', value: '1+' },
+    //     { label: 'PROJECTS', value: '1+' },
+    // ];
+
+    // const domains = [
+    //     {
+    //         number: '01',
+    //         name: 'Cybersecurity',
+    //         desc: 'Vulnerability research, penetration testing, binary analysis across network, web, and embedded attack surfaces.',
+    //     },
+    //     {
+    //         number: '02',
+    //         name: 'Embedded Systems',
+    //         desc: 'Firmware development, PCB design, hardware hacking, circuit analysis, and microcontroller programming.',
+    //     },
+    //     {
+    //         number: '03',
+    //         name: 'AI & Computation',
+    //         desc: 'Machine learning, computational theory, mathematical foundations, and applied algorithm design.',
+    //     },
+    //     {
+    //         number: '04',
+    //         name: 'Full-Stack & Web3',
+    //         desc: 'Scalable architectures, smart contract development, DeFi protocols, and modern web platforms.',
+    //     },
+    // ];
+
+    // const skills = [
+    //     {
+    //         title: 'Security',
+    //         items: [
+    //             'Web application pentesting',
+    //             'Network security assessment',
+    //             'Vulnerability research',
+    //             'Binary exploitation',
+    //             'Reverse engineering',
+    //             'OSINT',
+    //         ],
+    //     },
+    //     {
+    //         title: 'Development',
+    //         items: [
+    //             'Full-stack web (React / Next.js)',
+    //             'API design & implementation',
+    //             'Cloud infrastructure',
+    //             'TypeScript / Python / Go',
+    //             'Docker / Linux admin',
+    //             'Git workflows',
+    //         ],
+    //     },
+    //     {
+    //         title: 'AI / ML',
+    //         items: [
+    //             'Model development & training',
+    //             'ML system deployment',
+    //             'Data pipeline engineering',
+    //             'Computational theory',
+    //             'Applied mathematics',
+    //             'Algorithm design',
+    //         ],
+    //     },
+    //     {
+    //         title: 'Hardware',
+    //         items: [
+    //             'Firmware development',
+    //             'PCB design (KiCad)',
+    //             'Circuit analysis',
+    //             'JTAG / SWD debugging',
+    //             'Embedded Linux',
+    //             'RF basics',
+    //         ],
+    //     },
+    // ];
+
     const aboutParagraphs = [
-        "Grim Labs is a public, independent research and engineering lab dedicated to building, testing, and refining ideas over the long term.", 
-        "We explore innovative solutions across technology and science, documenting our work openly to engage collaborators and share insights with the broader community.",
-        "Our goal is to make research and experimentation accessible, meaningful, and impactful for everyone involved.",
-    ]
+        "GRIM LABS is an independent research and engineering laboratory focused on understanding, building, and analyzing complex systems.",
+
+        "Our work spans software systems, hardware systems, security research, and applied sciences. Through experimentation, engineering, and first-principles investigation, we explore how systems are designed, how they behave, and how they fail.",
+
+        "By documenting projects, research, discoveries, and lessons learned openly, we aim to build a long-term body of knowledge that bridges theory, engineering, and real-world systems."
+    ];
 
     const stats = [
         { label: 'DOMAINS', value: '04' },
-        { label: 'YEARS', value: '1+' },
-        { label: 'PROJECTS', value: '1+' },
+        { label: 'ACTIVE PROJECTS', value: '01+' },
+        { label: 'RESEARCH AREAS', value: '8+' },
     ];
 
     const domains = [
         {
             number: '01',
-            name: 'Cybersecurity',
-            desc: 'Vulnerability research, penetration testing, binary analysis across network, web, and embedded attack surfaces.',
+            name: 'Software Systems',
+            desc: 'Application engineering, software architecture, automation, developer tooling, intelligent systems, and computational infrastructure.',
         },
         {
             number: '02',
-            name: 'Embedded Systems',
-            desc: 'Firmware development, PCB design, hardware hacking, circuit analysis, and microcontroller programming.',
+            name: 'Hardware Systems',
+            desc: 'Embedded systems, electronics, PCB design, firmware development, electrical engineering, and physical computing.',
         },
         {
             number: '03',
-            name: 'AI & Computation',
-            desc: 'Machine learning, computational theory, mathematical foundations, and applied algorithm design.',
+            name: 'Security Research',
+            desc: 'Vulnerability discovery, application security, adversarial analysis, system failures, reverse engineering, and security automation.',
         },
         {
             number: '04',
-            name: 'Full-Stack & Web3',
-            desc: 'Scalable architectures, smart contract development, DeFi protocols, and modern web platforms.',
+            name: 'Applied Sciences',
+            desc: 'Mathematics, physics, computational modeling, systems theory, and the scientific foundations of engineering.',
         },
     ];
 
     const skills = [
         {
-            title: 'Security',
+            title: 'Software Systems',
             items: [
-                'Web application pentesting',
-                'Network security assessment',
-                'Vulnerability research',
-                'Binary exploitation',
-                'Reverse engineering',
-                'OSINT',
+                'Web applications',
+                'Backend systems',
+                'Developer tooling',
+                'Automation platforms',
+                'System architecture',
+                'Computational infrastructure',
             ],
         },
         {
-            title: 'Development',
+            title: 'Hardware Systems',
             items: [
-                'Full-stack web (React / Next.js)',
-                'API design & implementation',
-                'Cloud infrastructure',
-                'TypeScript / Python / Go',
-                'Docker / Linux admin',
-                'Git workflows',
-            ],
-        },
-        {
-            title: 'AI / ML',
-            items: [
-                'Model development & training',
-                'ML system deployment',
-                'Data pipeline engineering',
-                'Computational theory',
-                'Applied mathematics',
-                'Algorithm design',
-            ],
-        },
-        {
-            title: 'Hardware',
-            items: [
+                'PCB design',
+                'Embedded systems',
                 'Firmware development',
-                'PCB design (KiCad)',
-                'Circuit analysis',
-                'JTAG / SWD debugging',
-                'Embedded Linux',
-                'RF basics',
+                'Electrical design',
+                'Industrial control systems',
+                'Physical computing',
+            ],
+        },
+        {
+            title: 'Security Research',
+            items: [
+                'Application security',
+                'Vulnerability research',
+                'Attack surface analysis',
+                'Security automation',
+                'Reverse engineering',
+                'System failure analysis',
+            ],
+        },
+        {
+            title: 'Applied Sciences',
+            items: [
+                'Mathematics',
+                'Physics',
+                'Computational modeling',
+                'Systems theory',
+                'Scientific computing',
+                'Engineering analysis',
             ],
         },
     ];
@@ -367,7 +451,7 @@ export default function About() {
                                     {skill.items.map((item, i) => (
                                         <li
                                             key={i}
-                                            className="py-[6px] transition-colors duration-300 cursor-default"
+                                            className="py-1.5 transition-colors duration-300 cursor-default"
                                             style={{
                                                 fontSize: '16px',
                                                 fontWeight: 300,

@@ -195,7 +195,7 @@ export default function BlogPageClient({ blogs }: { blogs: Blog[] }) {
           {hasFilters && (
             <button
               onClick={resetFilters}
-              className="mt-4 text-[11px] tracking-[2px] uppercase transition-colors duration-300 hover:text-[var(--accent)] cursor-crosshair"
+              className="mt-4 text-[11px] tracking-[2px] uppercase transition-colors duration-300 hover:text-(--accent) cursor-crosshair"
               style={{ color: 'var(--muted-foreground)' }}
             >
               Clear filters
@@ -249,7 +249,7 @@ export default function BlogPageClient({ blogs }: { blogs: Blog[] }) {
                   >
                     {/* Left accent bar */}
                     <div
-                      className="accent-bar w-[2px] flex-shrink-0 transition-colors duration-300"
+                      className="accent-bar w-0.5 shrink-0 transition-colors duration-300"
                       style={{ background: 'var(--border-primary)' }}
                     />
 
@@ -276,7 +276,7 @@ export default function BlogPageClient({ blogs }: { blogs: Blog[] }) {
                           )}
                         </div>
                         <span
-                          className="text-[16px] leading-[1.4] transition-colors duration-300 group-hover:text-[var(--accent)]"
+                          className="text-[16px] leading-[1.4] transition-colors duration-300 group-hover:text-(--accent)"
                           style={{ color: 'var(--foreground)' }}
                         >
                           {post.title}
@@ -285,7 +285,7 @@ export default function BlogPageClient({ blogs }: { blogs: Blog[] }) {
 
                       {/* Arrow */}
                       <span
-                        className="text-[14px] shrink-0 pt-5 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-[var(--accent)]"
+                        className="text-[14px] shrink-0 pt-5 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-(--accent)"
                         style={{ color: 'var(--muted-foreground)' }}
                       >
                         ↗

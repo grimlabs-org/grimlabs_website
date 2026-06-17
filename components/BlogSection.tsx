@@ -7,7 +7,7 @@ export default function BlogSection() {
       id="blog"
       className="relative py-36 px-4 md:px-10"
     >
-      <div className="container mx-auto max-w-[1200px]">
+      <div className="container mx-auto max-w-300">
         {/* Section header */}
         <div className="section-marker mb-4">005 — Writings</div>
         <h2
@@ -30,11 +30,11 @@ export default function BlogSection() {
         <div className="mt-16 text-center">
           <Link
             href="/blog"
-            className="group inline-flex items-center gap-4 text-[14px] tracking-[3px] uppercase transition-colors duration-300 text-[var(--white-dim)] hover:text-[var(--red)]"
+            className="group inline-flex items-center gap-4 text-[14px] tracking-[3px] uppercase transition-colors duration-300 text-(--white-dim) hover:text-(--red)"
           >
-            <span className="w-8 h-px transition-colors duration-300 bg-[var(--trace-line)] group-hover:bg-[var(--red)]" />
+            <span className="w-8 h-px transition-colors duration-300 bg-(--trace-line) group-hover:bg-(--red)" />
             View All Articles
-            <span className="w-8 h-px transition-colors duration-300 bg-[var(--trace-line)] group-hover:bg-[var(--red)]" />
+            <span className="w-8 h-px transition-colors duration-300 bg-(--trace-line) group-hover:bg-(--red)" />
           </Link>
         </div>
       </div>
